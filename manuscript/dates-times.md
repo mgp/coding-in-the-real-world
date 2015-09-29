@@ -1,7 +1,7 @@
 {#chapter-dates-and-times}
 # Dates and Times
 
-While time is a concept that we employ every day, we have likely been confused by it and asked questions like: When do I adjust my clock for daylight saving time? What is the time difference between two cities? Is this year a leap year? While computers have alleviated the burden of some of these questions as users, we may have no choice but to confront these questions as programmers. And when manipulating dates and times in programs, we may have to deal not only with the aforementioned issues, but additional nuances such as leap seconds, differing representations of time, robust methods for storing local time, and accurate methods for keeping time. In this chapter, we begin by attempting to develop an intuition for modeling time, and then explore practical aspects such as its standardized representations, best practices for managing it, and more.
+While we make use of time every day, we have likely been confused by it and asked questions like: When do I adjust my clocks for daylight saving time? What is the time difference between two cities? Is this year a leap year? While computers have eased the burden of some of these questions as users, we may have no choice but to confront these questions as programmers. And when manipulating dates and times in programs, we may have to confront not only with the aforementioned issues, but additional ones such as leap seconds, differing representations of time, robust methods for storing local time, and accurate methods for keeping time. In this chapter, we begin by developing an intuition for modeling time, and then explore practical aspects such as its standardized representations, best practices for managing it, and more.
 
 ## Time bases
 
@@ -531,8 +531,6 @@ This chapter explored the measurement and management of dates and times. Some ke
 * The tz database defines the UTC offsets, daylight saving rules, and leap second applications for all time zones.
 * ISO 8601 is the standard textual representation for dates and times paired with a UTC offset.
 * The Unix epoch is the date January 1, 1970 at 00:00:00 UTC.
-* Unix time is the number of seconds since the Unix epoch, excluding leap seconds. It is a lossy encoding of UTC.
-* The year 2038 problem refers to the date when we can no longer represent Unix time in a signed 32-bit integer.
 * Convert between UTC and the user's local time by applying an UTC offset from a tz database location.
 * Always store time in Unix time or UTC format, and convert to local time as late as possible.
 * The Network Time Protocol, or NTP, synchronizes a client's clock with that of a remote server.
