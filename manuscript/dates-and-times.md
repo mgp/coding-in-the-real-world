@@ -45,7 +45,7 @@ After the leap second, UTC and UT1 are less than 0.4 seconds apart, while the of
 |00:00:36.00 on July 1, 2012 |00:00:01.00 on July 1, 2012  |35.00              |
 
 
-![Difference between UT1 and UTC, also called *DUT1*, over the last 20 years as measured by the International Earth Rotation and Reference Systems Service. UTC ticks faster than UT1, and so the difference becomes increasingly negative until a leap second is added, which accounts for each spike.](images/ut1_utc_difference.png)
+![Difference between UT1 and UTC, also called *DUT1*, over the last 20 years as measured by the International Earth Rotation and Reference Systems Service. UTC ticks faster than UT1, and so the difference becomes increasingly negative until a leap second is added, which accounts for each spike.](images/ch-dates-and-times/ut1_utc_difference.png)
 
 [^iers]: http://maia.usno.navy.mil/
 
@@ -59,7 +59,7 @@ UTC approximates UT1, or the mean solar time at Greenwich, London. But other reg
 
 If an offset is ahead of UTC, we write it as UTC+[hh]:[mm] or UTC+[hh][mm]. Similarly, if an offset is behind UTC, we write it as UTC-[hh]:[mm] or UTC-[hh][mm]. For example, Venezuela uses an offset of UTC-04:30, and Nepal uses an offset of UTC+05:45. Offsets span between UTC-12:00, used by the [United States Minor Outlying Islands](http://en.wikipedia.org/wiki/United_States_Minor_Outlying_Islands), and UTC+14:00, used by the [Republic of Kiribati](http://en.wikipedia.org/wiki/Kiribati). If an offset is ahead of UTC by a whole number of hours, we can write it as simply UTC+[hh]. Similarly, if an offset is behind UTC by a whole number of hours, we can write it as simply UTC-[hh]. For example, New York uses Eastern Standard Time, which is 5 hours behind UTC and is written as UTC-05. California uses Pacific Standard Time, which is 8 hours behind UTC and is written as UTC-08.
 
-![Standard time zones with UTC offsets, from the CIA Factbook.](images/standard_time_zones_of_the_world.jpg)
+![Standard time zones with UTC offsets, from the CIA Factbook.](images/ch-dates-and-times/standard_time_zones_of_the_world.jpg)
 
 [^cia_factbook]: https://www.cia.gov/library/publications/the-world-factbook/docs/refmaps.html
 
@@ -91,7 +91,7 @@ Conversationally, when referring to the time zone of a region, we omit specifyin
 The [tz database](http://cs.ucla.edu/~eggert/tz/), which is also called the "Olson database" after its first and longtime maintainer Arthur David Olson, is a comprehensive history of time zones, UTC offsets, and daylight saving rules adopted around the world since January 1, 1970. It defines a set of national regions, where all clocks in a given region have shared the same time since this date. Each region has a unique name, or *location*, formed by prefixing the largest city in the region with the continent or ocean it is found in. For example, location `America/New_York` refers to the region that shares its time with New York City and is on Eastern time. And location `America/Los_Angeles` refers to the region that shares its time with Los Angeles and is on Pacific time. The database records when the leap seconds in a region occurred, but it does not define the geographical boundaries of each region.
 
 {#tz_world}
-![Eric Muller's world map of the tz database regions, excluding Antarctica and many smaller regions.](images/tz_world.jpg)
+![Eric Muller's world map of the tz database regions, excluding Antarctica and many smaller regions.](images/ch-dates-and-times/tz_world.jpg)
 
 [^tz_world]: http://efele.net/maps/tz/world/
 
@@ -139,7 +139,7 @@ Location names exclude country names. Instead, they include a continent or ocean
 
 For example, [Google Calendar](https://www.google.com/calendar/) shows the following locations for Indonesia:
 
-![Time zone options for Indonesia in Google Calendar.](images/google_calendar_tz.png)
+![Time zone options for Indonesia in Google Calendar.](images/ch-dates-and-times/google_calendar_tz.png)
 
 These correspond to locations `Asia/Jakarta`, `Asia/Makassur`, and `Asia/Jayapura` in the tz database. (Pacific Time corresponds to my local time, and so Google Calendar displays it regardless of the chosen country. Also note that Google Calendar uses GMT a synonym of UTC.)
 
