@@ -1,2 +1,3 @@
+data-structures-and-algorithms.md
 dates-and-times.md
 bittorrent-client-case-study.md
