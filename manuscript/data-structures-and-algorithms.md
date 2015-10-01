@@ -1,7 +1,9 @@
 {#chapter-data-structures-and-algorithms}
 # Data Structures and Algorithms
 
-TODO
+Classes on data structures and algorithms can be overwhelming. There are so many things to learn! Constructing a minimum spanning tree or computing a convex hull is only the tip of the iceberg. But unless your work is highly specialized, you will not need many of these data structures and algorithms. Instead, you will repeatedly use only a small handful of them. Now you may think that if you only need to know a handful of data structures and algorithms, then you can get by without knowing any. But that is not true. Having a comprehensive understanding of the fundamental data structures and algorithms not only makes your code more robust, such as running faster and consuming less memory, but more correct. These are the hallmarks of any well-designed program.
+
+This chapter covers such fundamentals. It starts on mathematical grounds, where we develop mathematical concepts that allow us to inspect any code and determine its efficiency. We then move on to less theoretical matters, namely important abstract data types and data structures. We close by looking at important algorithms related to randomness, searching, and sorting.
 
 ## Rates of growth
 
@@ -1111,7 +1113,7 @@ If we had access to the source code of `IntMinHeap`, we could optimize this code
 
 Before you use this heap-based solution, check whether your programming language has a library with a more efficient implementation of partial sorting. For example, a modified version of quicksort that does not recursively sort partitions with indexes greater than {$$}k{/$$} is more efficient.
 
-## Conclusion
+## Summary
 
 This chapter explored characterizing algorithms by their rates of growth, common abstract data types and their backing data structures, and searching and sorting. Here are some key takeaways:
 
